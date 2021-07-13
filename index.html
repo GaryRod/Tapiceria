@@ -5,32 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/estilos.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Muebles</title>
 </head>
 <body>
     <header class="cont">
-        <h1 class="cont__titulo">Muebles</h1>
-        <nav class="cont__nav">
-            <ul class="cont__lista">
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Productos</a></li>
-                <li><a href="">Nosotros</a></li>
+        <h1 class="">Muebles</h1>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+              <li><a class="active" href="#">Inicio</a></li>
+              <li><a href="#">Productos</a></li>
+              <li><a href="#">Nosotros</a></li>
+
             </ul>
-        </nav>
+          </nav>
     </header>
     <section class="cont-inicio">
         <div class="cont-inicio__texto">
             <p>¿Tienes un sofa, sillas o demas muebles que necesiten reparación? ¡Comunicate con nosotros y te lo arreglamos!</p>
         </div>
-        <picture class="cont-inicio__picture">
-            <source srcset="imagenes/sofa-1-150.jpg" media="(max-width: 480px)">
-            <source srcset="imagenes/sofa-1.jpg">
-            <img src="imagenes/sofa-1.jpg" alt="images">
+        <div class="cont-inicio__imagenes">
+            <picture>
+                <source srcset="imagenes/sofa-1-150.jpg" media="(max-width: 480px)">
+                <source srcset="imagenes/sofa-1.jpg">
+                <img src="imagenes/sofa-1.jpg" alt="images">
           </picture>
+        </div>
     </section>
-<!--
+
     <section class="cont-prod">
-        <h2 class="subtitulo">Algunos de nuestros trabajos</h2>
+        <h2 class="cont-prod__subtitulo">Mirá algunos de nuestros trabajos</h2>
         <div class="cont-prod__tarjetas-row">
                 <img src="imagenes/sofa-2.jpg" alt="imagen" width="250px" height="250px">
                 <img src="imagenes/sofa-3.jpg" alt="imagen" width="250px" height="250px">
@@ -40,9 +48,9 @@
                 <img src="imagenes/sillon-in-2.jpg" alt="imagen" width="250px" height="250px">
         </div>
     </section>
--->
-    <a href="https://www.youtube.com/watch?v=8Zh1vHTzxLk&list=RDMM3xlsuzUUeUw&index=12">
-    <img src="imagenes/whatsapp-logo.png" alt="" width="50px" height="50px" class="logo">
+
+    <a href="https://www.youtube.com/watch?v=8Zh1vHTzxLk&list=RDMM3xlsuzUUeUw&index=12"  target="_blank">
+    <img src="imagenes/whatsapp-logo.png" alt="logo" width="50px" height="50px" class="logo">
     </a>
 
         
