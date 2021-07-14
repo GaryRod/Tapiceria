@@ -9,43 +9,58 @@
     <title>Muebles</title>
 </head>
 <body>
-    <header class="cont">
-        <h1 class="">Muebles</h1>
-        <nav>
+    <header class="cont-header">
+        <h1 class="cont-header__titulo">Muebles</h1>
+        <nav class="cont-header__nav">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
-              <i class="fas fa-bars"></i>
+                <i class="fas fa-bars"></i>
             </label>
-            <ul>
-              <li><a class="active" href="#">Inicio</a></li>
-              <li><a href="#">Productos</a></li>
-              <li><a href="#">Nosotros</a></li>
-
+            <ul class="cont-header__lista">
+                <li class="cont-header__lista-item"><a href="">Inicio</a></li>
+                <li class="cont-header__lista-item"><a href="">Productos</a></li>
+                <li class="cont-header__lista-item"><a href="">Nosotros</a></li>
             </ul>
-          </nav>
+        </nav>  
     </header>
     <section class="cont-inicio">
         <div class="cont-inicio__texto">
             <p>¿Tienes un sofa, sillas o demas muebles que necesiten reparación? ¡Comunicate con nosotros y te lo arreglamos!</p>
         </div>
-        <div class="cont-inicio__imagenes">
-            <picture>
-                <source srcset="imagenes/sofa-1-150.jpg" media="(max-width: 480px)">
+            <picture>        
+                <source srcset="imagenes/sofa-1-300.jpg" media="(max-width: 630px)">
                 <source srcset="imagenes/sofa-1.jpg">
                 <img src="imagenes/sofa-1.jpg" alt="images">
-          </picture>
-        </div>
+          </picture>  
     </section>
 
     <section class="cont-prod">
         <h2 class="cont-prod__subtitulo">Mirá algunos de nuestros trabajos</h2>
-        <div class="cont-prod__tarjetas-row">
-                <img src="imagenes/sofa-2.jpg" alt="imagen" width="250px" height="250px">
-                <img src="imagenes/sofa-3.jpg" alt="imagen" width="250px" height="250px">
-                <img src="imagenes/silla1.jpg" alt="imagen" width="250px" height="250px">
-                <img src="imagenes/silla2.jpg" alt="imagen" width="250px" height="250px">
-                <img src="imagenes/sillon-in-1.jpg" alt="imagen" width="250px" height="250px">
-                <img src="imagenes/sillon-in-2.jpg" alt="imagen" width="250px" height="250px">
+        <div class="cont-prod__tarjetas">
+            <div class="cont-prod__column">
+                <div class="cont-prod__imgs">
+                    <img src="imagenes/sofa-2.jpg" alt="imagen">
+                </div>      
+                <div class="cont-prod__imgs">
+                    <img src="imagenes/sofa-3.jpg" alt="imagen">
+                </div class="cont-prod__imgs">
+            </div>
+            <div class="cont-prod__column">       
+                <div class="cont-prod__imgs">
+                    <img src="imagenes/silla1.jpg" alt="imagen">
+                </div>     
+                <div class="cont-prod__imgs">
+                    <img src="imagenes/silla2.jpg" alt="imagen">
+                </div>
+            </div>
+            <div class="cont-prod__column">       
+                <div class="cont-prod__imgs">
+                    <img src="imagenes/sillon-in-1.jpg" alt="imagen">
+                </div>     
+                <div class="cont-prod__imgs">
+                    <img src="imagenes/sillon-in-2.jpg" alt="imagen">
+                </div>
+              </div>      
         </div>
     </section>
 
@@ -53,7 +68,6 @@
     <img src="imagenes/whatsapp-logo.png" alt="logo" width="50px" height="50px" class="logo">
     </a>
 
-        
     
 </body>
 </html>
