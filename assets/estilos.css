@@ -98,7 +98,8 @@ picture img{
 
 /* Productos */
 .cont-prod {
-    width: 100vw;
+    width: auto;
+    margin: 10px 0px;
 }
 .cont-prod__subtitulo {
     text-align: center;
@@ -108,19 +109,35 @@ picture img{
     display: flex;
     width: 80%;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .cont-prod__imgs {
     width: 250px;
     height: 250px;
-    margin: px;
+    margin: 5px;
 }
 
 .cont-prod__imgs img {
-    
     min-width: 180px;
     height: 250px;
-    width: 100%; 
+    width: 100%;
+}
+
+/* Ubicacion */
+
+.cont-ubicacion {
+    width: 100%;
+    text-align: center;
+}
+
+.cont-ubicacion__titulo {
+    margin: 10px 0px;
+}
+
+.cont-ubicacion__mapa {
+    width: 100%;
 }
 
 /* logo whatsapp */
@@ -132,6 +149,14 @@ picture img{
     z-index: 1000;
 }
 
+hr {
+    width: 50%;
+    margin: 0 auto;
+    height: 3px;
+    background: #333;
+    border: solid #333;
+    border-radius: 50%;
+}
 
 @media screen and (max-width: 496px) {
 
@@ -173,8 +198,7 @@ picture img{
 
     .cont-inicio__texto {
         font-size: 15px;
-        margin-bottom: 10px;
-        margin-left: 0;
+        margin: 0 auto
     }
 
     picture img {
@@ -189,26 +213,38 @@ picture img{
         flex-direction: column;
         margin: 0 auto;
     }
-
-    .cont-prod__column {
-        display: flex;
+/*
+    .cont-prod__ims img {
+        width: 1px;
+        height: 1px;
     }
 
-    .cont-prod__imgs img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .cont-prod__imgs {
+    .cont-prod__igs {
         width: 150px;
         height: 150px;
         margin: px;
-    }   
+    }
+    */
+    iframe {
+        width: 300px;
+        
+    }
 }
 
 @media screen and (max-width: 780px) and (min-width: 497px) {
+
+    /* Inicio */
     .cont-inicio__texto {
         margin-top: 5%;
+    }
+
+    /* Productos */
+
+    .cont-prod__tarjetas{
+        flex-direction: column;
+    }
+    .cont-prod__column {
+        display: flex;
     }
 }
 
