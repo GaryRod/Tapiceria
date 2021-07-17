@@ -184,7 +184,7 @@ hr {
     .cont-header__lista {
         position: fixed;
         width: 100%;
-        height: 30vh;
+        height: 220px;
         background: #333;
         top: 70px;
         left: -100%;
@@ -194,7 +194,7 @@ hr {
 
     .cont-header__lista-item {
         display: block;
-        margin: 40px 0;
+        margin: 50px 0;
         line-height: 10px;
     }
 
