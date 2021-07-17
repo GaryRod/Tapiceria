@@ -166,6 +166,7 @@ picture img{
     height: 80px;
     transition: all 1s;
 }
+
 hr {
     width: 50%;
     margin: 20px auto;
@@ -244,7 +245,13 @@ hr {
     */
     iframe {
         width: 300px;
-        
+    }
+
+    /* Logo whatsapp */
+    .logo:hover {
+        width: 50px;
+        height: 50px;
+        transition: all 1s;
     }
 }
 
