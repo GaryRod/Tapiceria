@@ -13,7 +13,6 @@ body {
     height: 100vh;
     background: radial-gradient(circle, rgba(80,157,172,1) 0%, rgba(78,82,106,1) 100%);
     margin-top: 80px;
-    scroll: smooth;
 }
 
 /* Header */
@@ -80,7 +79,7 @@ a:hover{
 .cont-inicio {
     width: 100%;
     display: flex;
-    background-color: rgb(53, 49, 49);
+    background-color: #333;
     margin-top: 10px;
     flex-direction: row;
 }
@@ -99,11 +98,13 @@ picture img{
 /* Productos */
 .cont-prod {
     width: auto;
-    margin: 10px 0px;
+    background-color: #333;
 }
-.cont-prod__subtitulo {
+.cont-prod__titulo {
     text-align: center;
-    margin: 20px 0px;
+    margin: 10px 0px;
+    color: #fff;
+    padding-top: 10px;
 }
 .cont-prod__tarjetas {
     display: flex;
@@ -130,14 +131,25 @@ picture img{
 .cont-ubicacion {
     width: 100%;
     text-align: center;
+    background-color: #333;
 }
 
 .cont-ubicacion__titulo {
     margin: 10px 0px;
+    color: #fff;
+    padding-top: 10px;
 }
 
 .cont-ubicacion__mapa {
     width: 100%;
+    padding-bottom: 10px;
+}
+
+/* Footer */
+
+.cont-footer {
+    width: 100%;
+    background-color: #333;
 }
 
 /* logo whatsapp */
@@ -149,9 +161,14 @@ picture img{
     z-index: 1000;
 }
 
+.logo:hover {
+    width: 80px;
+    height: 80px;
+    transition: all 1s;
+}
 hr {
     width: 50%;
-    margin: 0 auto;
+    margin: 20px auto;
     height: 3px;
     background: #333;
     border: solid #333;
@@ -167,7 +184,7 @@ hr {
     .cont-header__lista {
         position: fixed;
         width: 100%;
-        height: 100vh;
+        height: 30vh;
         background: #333;
         top: 70px;
         left: -100%;
@@ -177,15 +194,15 @@ hr {
 
     .cont-header__lista-item {
         display: block;
-        margin: 50px 0;
-        line-height: 30px;
+        margin: 40px 0;
+        line-height: 10px;
     }
 
     .cont-header__lista-item a {
         font-size: 20px;
     }
 
-    a:hover {
+    a:active {
         background: none;
         color: rgb(224, 69, 69);
     }
@@ -193,7 +210,7 @@ hr {
     #check:checked ~ ul{
         left: 0;
     }
-    
+
     /* Inicio */
 
     .cont-inicio__texto {
