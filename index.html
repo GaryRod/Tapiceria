@@ -10,20 +10,20 @@
 <body>
     <header class="cont-header">
         <h1 class="cont-header__titulo">Muebles</h1>
-        <nav class="cont-header__nav">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                ☰
-            </label>
+        <input type="checkbox" id="check" class="check">
+        <label for="check" class="checkbtn" id="label">
+            ☰
+        </label>
+        <nav class="cont-header__nav" id="nav">
             <ul class="cont-header__lista">
-                <li class="cont-header__lista-item"><a href="#inicio">Inicio</a></li>
-                <li class="cont-header__lista-item"><a href="#productos">Productos</a>
+                <li class="cont-header__lista-item"><a href="#" class="cont-header-links">Inicio</a></li>
+                <li class="cont-header__lista-item"><a href="#productos" class="cont-header-links">Productos</a>
                 </li>
-                <li class="cont-header__lista-item"><a href="#nosotros">Nosotros</a></li>
+                <li class="cont-header__lista-item"><a href="#nosotros" class="cont-header-links">Nosotros</a></li>
             </ul>
         </nav>  
     </header>
-    <section id="inicio" class="cont-inicio">
+    <section class="cont-inicio">
         <div class="cont-inicio__texto">
             <p>¿Tienes un sofa, sillas o demas muebles que necesiten reparación? ¡Comunicate con nosotros y te lo arreglamos!</p>
         </div>
@@ -31,43 +31,37 @@
                 <source srcset="imagenes/sofa-1-300.jpg" media="(max-width: 630px)">
                 <source srcset="imagenes/sofa-1.jpg">
                 <img src="imagenes/sofa-1.jpg" alt="images">
-          </picture>  
+            </picture>  
     </section>
 <hr>
     <section id="productos" class="cont-prod">
         <h2 class="cont-prod__titulo">Mirá algunos de nuestros trabajos</h2>
         <div class="cont-prod__tarjetas">
-            <div class="cont-prod__column">
                 <div class="cont-prod__imgs">
                     <img src="imagenes/sofa-2.jpg" alt="imagen">
                 </div>      
                 <div class="cont-prod__imgs">
                     <img src="imagenes/sofa-3.jpg" alt="imagen">
-                </div class="cont-prod__imgs">
-            </div>
-            <div class="cont-prod__column">       
+                </div>
                 <div class="cont-prod__imgs">
-                    <img src="imagenes/silla1.jpg" alt="imagen">
+                    <img src="imagenes/silla1-250.jpg" alt="imagen">
                 </div>     
                 <div class="cont-prod__imgs">
-                    <img src="imagenes/silla2.jpg" alt="imagen">
-                </div>
-            </div>
-            <div class="cont-prod__column">       
+                    <img src="imagenes/silla2-250.jpg" alt="imagen">
+                </div>     
                 <div class="cont-prod__imgs">
-                    <img src="imagenes/sillon-in-1.jpg" alt="imagen">
+                    <img src="imagenes/sillon-in-1-250.jpg" alt="imagen">
                 </div>     
                 <div class="cont-prod__imgs">
                     <img src="imagenes/sillon-in-2.jpg" alt="imagen">
-                </div>
-              </div>      
+                </div>     
         </div>
     </section>
     <hr>
-    <section class="cont-ubicacion">
+    <section id="nosotros" class="cont-ubicacion">
         <h2 class="cont-ubicacion__titulo">Ubicación</h2>
         <div class="cont-ubicacion__mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13125.92397496686!2d-58.48765766272778!3d-34.667808050960446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc94159ed4f75%3A0xf0df0c8feb772090!2sFantoche!5e0!3m2!1ses-419!2sar!4v1626305567511!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13125.92397496686!2d-58.48765766272778!3d-34.667808050960446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc94159ed4f75%3A0xf0df0c8feb772090!2sFantoche!5e0!3m2!1ses-419!2sar!4v1626305567511!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
 <hr>
@@ -79,5 +73,7 @@
     <img src="imagenes/whatsapp-logo.png" alt="logo" width="50px" height="50px" class="logo">
     </a>
 
+    <script src="menu-hamburguesa.js"></script>
+    <script src="index-tapiceria.js"></script>
 </body>
 </html>

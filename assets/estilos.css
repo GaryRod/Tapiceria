@@ -12,13 +12,12 @@ body {
     width: 100%;
     height: 100vh;
     background: radial-gradient(circle, rgba(80,157,172,1) 0%, rgba(78,82,106,1) 100%);
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 /* Header */
 .cont-header {
     width: 100%;
-    height: 70px;
     background-color: rgb(224, 69, 69);
     display: flex;
     position: fixed;
@@ -28,7 +27,7 @@ body {
 }
 
 .cont-header__titulo {
-    margin-left: auto;
+    margin: auto;
     color: #fff;
 }
 
@@ -42,11 +41,10 @@ body {
 
 .cont-header__lista-item {
     display: inline-block;
-    line-height: 80px;
     margin: 0 5px;
 }
 
-.cont-header__lista-item a{
+.cont-header-links{
     color: #fff;
     font-size: 17px;
     padding: 7px 13px;
@@ -56,22 +54,20 @@ body {
     text-decoration: none;
 }
 
-a:hover{
+.cont-header-links:hover{
     background: #333;
     transition: .5s;
 }
 
 .checkbtn{
-    font-size: 30px;
+    font-size: 25px;
     color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
+    margin-right: 20px;
     cursor: pointer;
     display: none;
 }
 
-#check{
+.check{
     display: none;
 }
 
@@ -82,13 +78,14 @@ a:hover{
     background-color: #333;
     margin-top: 10px;
     flex-direction: row;
+    gap: 10px;
 }
 
 .cont-inicio__texto {
     color: #fff;
     font-size: 2rem;
-    margin-top: 10%;
-    margin-left: 5%;
+    margin: auto;
+    text-align: center;
 }
 
 picture img{
@@ -102,28 +99,25 @@ picture img{
 }
 .cont-prod__titulo {
     text-align: center;
-    margin: 10px 0px;
     color: #fff;
-    padding-top: 10px;
+    padding: 50px 0;
 }
 .cont-prod__tarjetas {
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 0 10px 10px 10px;
 }
 
 .cont-prod__imgs {
-    width: 250px;
-    height: 250px;
-    margin: 5px;
+    position: relative;
 }
 
 .cont-prod__imgs img {
-    min-width: 180px;
-    height: 250px;
+    object-fit: cover;
     width: 100%;
+    height: 100%;
 }
 
 /* Ubicacion */
@@ -135,14 +129,18 @@ picture img{
 }
 
 .cont-ubicacion__titulo {
-    margin: 10px 0px;
     color: #fff;
-    padding-top: 10px;
+    padding: 50px 0;
 }
 
 .cont-ubicacion__mapa {
     width: 100%;
-    padding-bottom: 10px;
+    padding: 0px 0;
+}
+
+.cont-ubicacion__mapa iframe {
+    width: 600px;
+    height: 400px;
 }
 
 /* Footer */
@@ -181,70 +179,51 @@ hr {
     .checkbtn{
         display: block;
     }
-      
-    .cont-header__lista {
+
+    .cont-header__nav {
         position: fixed;
         width: 100%;
-        height: 220px;
-        background: #333;
-        top: 70px;
-        left: -100%;
+        background-color: rgb(224, 69, 69);
+        top: 37px;
+        left: 100%;
         text-align: center;
         transition: all .5s;
     }
 
+    .cont-header__lista{
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0;
+    }
     .cont-header__lista-item {
-        display: block;
-        margin: 50px 0;
-        line-height: 10px;
+        padding: 10px;
+        margin-bottom: 5px;
     }
 
-    .cont-header__lista-item a {
+    .cont-header-links {
         font-size: 20px;
     }
 
-    a:active {
-        background: none;
-        color: rgb(224, 69, 69);
-    }
-
-    #check:checked ~ ul{
+    /* #check:checked ~ nav{
         left: 0;
+    } */
+
+    .nav{
+        transform: translateX(-100%);
     }
 
     /* Inicio */
-
-    .cont-inicio__texto {
-        font-size: 15px;
-        margin: 0 auto
-    }
-
     picture img {
-       width: 100%;
-       min-width: 180px;
+        width: 100%;
+        min-width: 180px;
     }
 
     /* Productos */
 
-    .cont-prod__tarjetas{
-        width: 95%;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-/*
-    .cont-prod__ims img {
-        width: 1px;
-        height: 1px;
-    }
-
-    .cont-prod__igs {
-        width: 150px;
-        height: 150px;
-        margin: px;
-    }
-    */
-    iframe {
+    .cont-ubicacion__mapa iframe {
         width: 300px;
+        height: 300px;
+        min-width: 250px;
     }
 
     /* Logo whatsapp */
@@ -258,17 +237,13 @@ hr {
 @media screen and (max-width: 780px) and (min-width: 497px) {
 
     /* Inicio */
-    .cont-inicio__texto {
-        margin-top: 5%;
-    }
 
     /* Productos */
 
-    .cont-prod__tarjetas{
-        flex-direction: column;
-    }
-    .cont-prod__column {
-        display: flex;
+    /* Ubicación */
+    .cont-ubicacion__mapa iframe {
+        width: 400px;
+        height: 400px;
     }
 }
 
@@ -281,8 +256,7 @@ hr {
 
     .cont-inicio__texto {
         font-size: 20px;
-        margin-top: 10px;
-        flex: 1
+        margin-top: 1rem;
     }
 }
 
